@@ -1,0 +1,28 @@
+.header {
+    background-color: #2D2F34CC;
+    width: 1500px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.insideHeader {
+    width: 1400px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.logoDiv {
+    width: 330px;
+    height: 60px;
+    margin-left: 65px;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}

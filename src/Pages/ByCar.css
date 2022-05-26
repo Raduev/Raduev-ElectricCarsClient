@@ -1,0 +1,39 @@
+.MidBlock {
+    width: 650px;
+    border: 1px solid;
+    margin-top: 25px;
+    margin-left: 425px;
+    border-radius: 10px;
+}
+
+.ByCarImgBlock {
+    width: 550px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.ByCarImg {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.ByCarName {
+    text-align: center;
+}
+
+.PriceBlock {
+    text-align: center;
+}
+
+.PriceHeader {
+    text-align: center;
+}
+
+.DescriptionBlock {
+    text-align: center;
+}
+
+* {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}

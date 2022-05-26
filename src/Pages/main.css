@@ -1,0 +1,200 @@
+.main {
+  background-color: #2d2f34cc;
+  width: 1500px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.mainLine {
+  width: 1200px;
+  background-color: white;
+}
+.carTitle {
+  margin-left: 540px;
+  margin-top: 35px;
+  background: linear-gradient(to right, #40b0df 50%, #ffd53d 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: colorAnim 3s infinite;
+}
+
+.lineBlock {
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainTitle {
+  width: 1200px;
+  position: relative;
+  bottom: 25px;
+  left: 100px;
+}
+
+@keyframes colorAnim {
+  50% {
+    background: linear-gradient(to left, #ffd53d 50%, #40b0df 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+  }
+  100% {
+    background: linear-gradient(to right, #40b0df 50%, #ffd53d 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+  }
+}
+
+.cardsMain {
+  width: 1400px;
+}
+
+.ElectroCarCarts {
+  margin: auto;
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search {
+  width: 450px;
+  height: 35px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #5d616bcc;
+  font-size: 25px;
+  color: white;
+}
+
+.search::-webkit-input-placeholder {
+  color: white;
+  font-size: 25px;
+}
+
+.searchDiv {
+  margin-left: 400px;
+}
+
+.CartBlock {
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.LinkBlock {
+  width: 300px;
+  height: 300px;
+  text-decoration: none;
+}
+
+.carImg {
+  width: 300px;
+  height: 250px;
+}
+
+.empty {
+  margin: auto;
+  color: white;
+}
+
+.EmptyBlock {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.carName {
+  color: white;
+  margin-left: 15px;
+}
+
+.mainList {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.emptyMainList {
+  display: flex;
+  justify-content: center;
+  color: white;
+  visibility: hidden;
+}
+
+.number-List {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.number-List-choosed {
+  color: black;
+  margin-left: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+.number-List-begin {
+  color: black;
+  margin-left: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}
+
+.LoadingGif {
+  width: 300px;
+  height: 250px;
+}
+
+.LoadingBlock {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 300px;
+}
+
+i {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.emptyRight {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.emptyLeft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  visibility: hidden;
+}
+
+.emptyArrow {
+  visibility: hidden;
+}
