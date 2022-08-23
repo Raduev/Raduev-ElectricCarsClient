@@ -6,17 +6,18 @@ import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { useEffect } from "react";
 import { GetElectricCars } from "../redux/features/ElectricCarReducer";
+
 import { GetByCar } from "../redux/features/GetByCarReducer";
 import { Link, NavLink } from "react-router-dom";
 
 const Main = () => {
-  const electricCars = useSelector(
-    (state) => state.ElectricCarReducer.electricCar
-  );
 
-  const electricCarsLoading = useSelector(
-    (state) => state.ElectricCarReducer.loading
-  );
+  const dispatch = useDispatch();
+
+  const electricCars = useSelector((state) => state.ElectricCarReducer.electricCar);
+  console.log(electricCars)
+
+  // const electricCarsLoading = useSelector((state) => state.electricCars.loading);
 
   const [chooseNumber, setChooseNumber] = useState(false);
 
@@ -51,7 +52,6 @@ const Main = () => {
     dispatch(GetByCar(id));
   };
 
-  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(GetElectricCars());
   }, [dispatch]);
@@ -95,7 +95,7 @@ const Main = () => {
             >
               <i class={!carName == false ? "emptyLeft" : "arrow left"}></i>
             </h1>
-            {electricCarsLoading !== true ? (
+            {electricCars.Loading !== true ? (
               filteredCars == false ? (
                 <div className="EmptyBlock">
                   <h1 className="empty">Ничего не найдено</h1>
